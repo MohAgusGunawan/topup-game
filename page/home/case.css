@@ -1,0 +1,207 @@
+body {
+  background: #24042f;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 150px;
+}
+
+::-webkit-scrollbar {
+  height: 0;
+  width: 0.5rem;
+  position: absolute;
+  /* display: none; */
+}
+
+::-webkit-scrollbar-track {
+  background: #292e33;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1abc9c;
+  border-radius: 5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  margin-top: 30px;
+}
+
+.item {
+  flex: 0 0 calc(50% - 50px);
+  width: 100%;
+}
+
+.bg {
+  outline: 2px solid rgb(129, 9, 226);
+  outline-offset: 1px;
+  width: 400px;
+}
+.teks {
+  color: white;
+}
+.teks img {
+  cursor: pointer;
+}
+
+.item-list {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: #1b03f8;
+  width: 160%;
+  margin-left: -50px;
+  padding: 20px;
+  outline: 2px solid rgb(129, 9, 226);
+  outline-offset: 1px;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+}
+
+.item-item {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.item-list h2 {
+  position: absolute;
+  margin-top: -20px;
+  color: #000;
+}
+
+.list-item {
+  border: 2px solid black;
+  border-radius: 20px;
+  height: 180px;
+  margin-top: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+  box-shadow: 7px 7px rgba(156, 12, 156, 0.3);
+  transition: background-color 0.3s ease;
+}
+.list-item.selected {
+  background-color: #afafaf;
+}
+/* .clicked2 {
+  background-color: #afafaf;
+} */
+
+.item-list img {
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+
+.list-item p {
+  text-align: center;
+  color: black;
+  font-style: italic;
+}
+
+.list-pembayaran {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-right: 10px;
+  padding: 10px;
+  box-shadow: 10px 10px 10px rgba(156, 12, 156, 0.3);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.list-pembayaran img {
+  align-items: center;
+  height: 40px;
+}
+
+.item-list input {
+  margin-top: 25px;
+  width: 300px;
+  text-align: center;
+}
+.item-list button {
+  margin-top: 10px;
+  width: 150px;
+  text-align: center;
+}
+.item-list .ppp {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+/* Misalnya, untuk mengurangi ukuran teks dalam notifikasi */
+.swal2-popup {
+  font-size: 12px;
+}
+
+/* Atau untuk mengurangi lebar dan tinggi dari notifikasi */
+.swal2-popup {
+  width: 350px;
+  height: 250px;
+}
+
+/* Misalnya, untuk mengurangi ukuran ikon dalam notifikasi */
+.swal2-icon {
+  font-size: 12px;
+}
+
+.notifError {
+  color: crimson;
+  /* margin-top: -5px; */
+  font-size: 0.8rem;
+  display: none;
+}
+.notifError2 {
+  color: crimson;
+  /* margin-top: -5px; */
+  font-size: 0.8rem;
+  display: none;
+}
+.notifError3 {
+  position: absolute;
+  color: crimson;
+  margin-top: -18px;
+  margin-left: 250px;
+  font-size: 1.5rem;
+  display: none;
+}
+.kembali {
+  padding-top: 15px;
+  margin-bottom: -20px;
+  font-size: 2rem;
+  margin-left: -40px;
+}
+
+@media only screen and (max-width: 636px) {
+  /* Misalnya, untuk mengurangi ukuran teks dalam notifikasi */
+  .swal2-popup {
+    font-size: 10px;
+  }
+
+  /* Atau untuk mengurangi lebar dan tinggi dari notifikasi */
+  .swal2-popup {
+    width: 250px;
+    height: 220px;
+  }
+
+  /* Misalnya, untuk mengurangi ukuran ikon dalam notifikasi */
+  .swal2-icon {
+    font-size: 10px;
+  }
+}
+
+/* Style untuk kolom form yang readonly */
+.form-control[readonly] {
+  background-color: #f8f9fa;
+  cursor: not-allowed;
+}
+
+/* Style untuk kolom form yang readonly dengan warna teks */
+.form-control[readonly] {
+  background-color: #f8f9fa;
+  cursor: not-allowed;
+  color: #000;
+}
