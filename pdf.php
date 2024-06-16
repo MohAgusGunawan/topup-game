@@ -12,6 +12,6 @@ $pdf->setFont('times', '', 11, '', true);
 $pdf->setPrintHeader(false);
 $pdf->AddPage();
 
-$html = file_get_contents('http://localhost/topup-game/histori.php');
+$html = file_get_contents('https://topup-game.gunawans.web.id/histori.php');
 $pdf->writeHTMLCell(0, 0, '', '', $html, 0, 1, 0, true, '', true);
 $pdf->Output('Histori Transaksi Topup Game.pdf', 'D');

@@ -86,10 +86,8 @@ if (isset($_POST['submit'])) { //jika tombol submit di klik
 			$hashedPassword = md5($password);
 		}
 
-		$saldo = $_POST['saldo'];
 		$query = mysqli_query($koneksi, "UPDATE user SET 
-		username='$nama', email='$email', password='$hashedPassword', saldo='$saldo'
-		WHERE id_user='$id' ");
+		username='$nama', email='$email', password='$hashedPassword' WHERE id_user='$id' ");
 		$sukses = mysqli_affected_rows($koneksi);
 		if ($sukses > 0) {
 			echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";

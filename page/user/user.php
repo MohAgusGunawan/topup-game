@@ -355,10 +355,9 @@ switch ($action) {
 				$hashedPassword = md5($password);
 			}
 
-			$saldo = $_POST['saldo'];
 			$level = $_POST['level'];
 			$query = mysqli_query($koneksi, "UPDATE user SET 
-			username='$nama', email='$email', password='$hashedPassword', saldo='$saldo', level='$level'
+			username='$nama', email='$email', password='$hashedPassword', level='$level'
 			WHERE id_user='$id' ");
 			$sukses = mysqli_affected_rows($koneksi);
 			if ($sukses > 0) {
