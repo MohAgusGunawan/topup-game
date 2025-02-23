@@ -175,7 +175,45 @@ body {
   margin-left: -40px;
 }
 
-@media only screen and (max-width: 636px) {
+@media only screen and (max-width: 768px) {
+  .bg {
+    width: 350px;
+  }
+  #bg {
+    width: 350px;
+  }
+  .kembali {
+    margin-top: -30px;
+    margin-left: 0px;
+  }
+  .item {
+    width: 360px;
+    margin-left: -15px;
+  }
+  .list-item img {
+    height: 80px;
+  }
+  .list-item p {
+    font-size: 0.8rem;
+  }
+  .item-item {
+    grid-template-columns: 33.3% 33.3% 33.3%;
+  }
+  .item-list {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .item-list h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .teks a img {
+    margin-bottom: 20px;
+  }
+  .container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
   /* Misalnya, untuk mengurangi ukuran teks dalam notifikasi */
   .swal2-popup {
     font-size: 10px;
