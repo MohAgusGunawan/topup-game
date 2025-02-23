@@ -8,7 +8,7 @@
 <div class="container">
     <div class="item">
         <div class="bg">
-            <img src="assets/img/bgPUBG.jpg" alt="..." style="width: 400px; height: 200px">
+            <img src="assets/img/bgPUBG.jpg" alt="..." id="bg">
         </div>
         <div class="teks">
             <h2 class="text-start" style="margin-top:10px">PUBG Mobile</h2>
