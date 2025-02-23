@@ -38,6 +38,10 @@ body {
   outline-offset: 1px;
   width: 400px;
 }
+#bg {
+  width: 400px;
+  height: 200px;
+}
 .teks {
   color: white;
 }
@@ -214,6 +218,7 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
   }
+
   /* Misalnya, untuk mengurangi ukuran teks dalam notifikasi */
   .swal2-popup {
     font-size: 10px;
@@ -229,12 +234,6 @@ body {
   .swal2-icon {
     font-size: 10px;
   }
-}
-
-/* Style untuk kolom form yang readonly */
-.form-control[readonly] {
-  background-color: #f8f9fa;
-  cursor: not-allowed;
 }
 
 /* Style untuk kolom form yang readonly dengan warna teks */
